@@ -64,3 +64,17 @@ F) true - This is because 2 gets type casted to Boolean and since any number oth
 <br>
 <br>
 17. The result will be that it will return a new Array with the elements which are numbers multiplied by 2 of the original input array. This is because in the input to modifyArray, we give an array [1,2,3] and a function doSomething. Inside modifyArray, it creates a newArr array and then it starts a for loop that runs for the length of the input array. With every iteration it calls the callback function parameter on the input array elements. In this case the callback function parameter is the doSomething function. The doSomething function multiplies the number by 2 and returns that value. So, we get this new value and it is pushed into the newArr array. Once this is done for every element in the input array, the for loop ends and the newArr array is returned which has the updated values of the original input array.
+
+
+<br>
+<br>
+19. The output is:
+
+```
+1
+4
+3
+2
+```
+
+Here everything except 2 gets printed immediately while 2 gets printed after 1 second. When printNums is called, it prints out 1, then goes to next line where it encounters a timeout for 1000 milliseconds = 1 second. So the number 2 is printed after 1 second. The program, however, doesn't wait and goes ahead to next line where it encounters another setTimeout but this time with time 0. Even though the time is 0, it is still not executed immediately and the program goes on to the next line i.e. line 5 and 4 is printed out. After that 3 is printed out and when 1 second has passed, 2 is printed out to the console as well.
