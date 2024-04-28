@@ -23,3 +23,40 @@ D) student['Favorite Teacher'].name
 
 E) student.courseLoad[0]
 
+<br>
+13.
+
+A) '32' - This was given as '3' is a string and when we do + 2, it converts 2 to a string which can then be concatenated with 3.
+
+B) 1 - This was outputed as - operator cannot be performed on strings so in this case '3' gets converted to integer and then it is 3 - 2 which gives 1.
+
+C) 3 - This is because 3 is an integer and null is converted to 0 in numerical terms so 3 + 0 is still 3.
+
+D) '3null' - Since '3' is a string, null gets converted to a string 'null' and gets concatenated.
+
+E) 4 - Since true has value 1, adding 3 to it gives 4
+
+F) 0 - Since false has value 0 and null also has value 0, they both add up and give result 0.
+
+G) '3undefined' - This is because '3' is a string and when we do + undefined, undefined gets converted to string 'undefined' and as a result gets concatenated.
+
+H) NaN - The '-' operator as seen before results in converting the string to numerical value. However, undefined cannot be converted to a numerical value as a result it returns not a number (NaN).
+
+<br>
+14.
+
+A) true - '2' gets converted to numerical value for comparison as the other value is number and this makes the statement 2 > 1 true.
+
+B) false - Since both values are strings, they are compared using lexographical order and according to that '2' > '12' so it makes the statement false.
+
+C) true - This is true as when we use '==', it converts the values to the same data type and only checks is those values after conversion are equal.
+
+D) false - This is because when we use '===', it checks for both type equality as well as value equality which means they both need to be of the same tyoe as well. Here string and number are not the same type.
+
+E) false - true has the value 1, so when converted, 1 is not equal to 2 and this gives false.
+
+F) true - This is because 2 gets type casted to Boolean and since any number other than 0 is true, we get true from the statement since the value is true for both and the type is same as well.
+
+<br>
+15. '===' is for strict equality checks while '==' is for loose equality checks. '==' compares two values for equality after converting them to a common type. On the other hand, the '===' compares both the value and the type of the operands, which means no type conversion is performed. '==' allows for a more flexible comparison as type differences can be ignored. '===' makes sure that the comparisons are clearer as both value and type must be equal for it to return true.
+
