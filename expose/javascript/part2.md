@@ -9,4 +9,17 @@
 9. It will throw an error as let has a block scope and the variable i is defined in a for loop using let, so the value of i will only be accessible inside the for loop block. As a result line 12 will return an error that the variable is not defined.
 10. It will print out 3 as that is the length of the input array which is stored in the length variable using const in the function and since it is being accessed inside the function and not being updated, it will print out that value.
 11. The function will return an array containing the discounted prices of the input array after discounting those prices by the given discount [ 50, 100, 150 ]. This is because discounted is an array and the function successfully calculates the discounts and adds the discounted prices to the discounted array which is returned at the end. Even though discounted is a const variable, it is still mutable as an array. Const only prevents it from being reassigned. In the program we are not reassigning the value of discounted but just adding elements in the array. Since reassigning doesn't take place, we are successfully able to return the array with the discounted prices.
+
+<br>
 12. 
+
+A) student.name
+
+B) student['Grad Year']
+
+C) student.greeting()
+
+D) student['Favorite Teacher'].name
+
+E) student.courseLoad[0]
+
