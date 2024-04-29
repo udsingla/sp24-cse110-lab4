@@ -1,1 +1,2 @@
-
+1. The bug was that the values of num1 and num2 were strings which would cause them to be concatenated instead of being added like numbers and we could see the type of result was also string which verifies this bug.
+2. I would fix it by type casting the values of num1 and num2 to number when they are being assigned so they can be added like numbers and the result has a data type of number as well. 
