@@ -63,7 +63,7 @@ F) true - This is because 2 gets type casted to Boolean and since any number oth
 
 <br>
 <br>
-17. The result will be that it will return a new Array with the elements which are numbers multiplied by 2 of the original input array. This is because in the input to modifyArray, we give an array [1,2,3] and a function doSomething. Inside modifyArray, it creates a newArr array and then it starts a for loop that runs for the length of the input array. With every iteration it calls the callback function parameter on the input array elements. In this case the callback function parameter is the doSomething function. The doSomething function multiplies the number by 2 and returns that value. So, we get this new value and it is pushed into the newArr array. Once this is done for every element in the input array, the for loop ends and the newArr array is returned which has the updated values of the original input array.
+17. The result will be that it will return a new Array with the elements which are numbers multiplied by 2 of the original input array and give [2, 4, 6]. This is because in the input to modifyArray, we give an array [1,2,3] and a function doSomething. Inside modifyArray, it creates a newArr array and then it starts a for loop that runs for the length of the input array. With every iteration it calls the callback function parameter on the input array elements. In this case the callback function parameter is the doSomething function. The doSomething function multiplies the number by 2 and returns that value. So, we get this new value and it is pushed into the newArr array. Once this is done for every element in the input array, the for loop ends and the newArr array is returned which has the updated values of the original input array.
 
 
 <br>
